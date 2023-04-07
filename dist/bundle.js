@@ -126,7 +126,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/pageLoad.js\");\n/* harmony import */ var _homeTab__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./homeTab */ \"./src/homeTab.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\n\nfunction tabSwitcher() {\n  function emptyTab() {\n    const content = document.getElementById('content');\n    content.replaceChildren();\n  }\n\n  const homeBtn = document.getElementById('home');\n  homeBtn.addEventListener('click', () => {\n    emptyTab();\n    (0,_homeTab__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n  });\n\n  const contactBtn = document.getElementById('contact');\n  contactBtn.addEventListener('click', () => {\n    emptyTab();\n    // contactTab();\n  });\n}\n\n(0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\ntabSwitcher();\n\n\n//# sourceURL=webpack://odin-restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/pageLoad.js\");\n/* harmony import */ var _homeTab__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./homeTab */ \"./src/homeTab.js\");\n/* harmony import */ var _openingHrsTab__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./openingHrsTab */ \"./src/openingHrsTab.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\n\n\nfunction tabSwitcher() {\n  function emptyTab() {\n    const content = document.getElementById('content');\n    content.replaceChildren();\n  }\n\n  const homeBtn = document.getElementById('home');\n  homeBtn.addEventListener('click', () => {\n    emptyTab();\n    (0,_homeTab__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n  });\n\n  const openingHrsBtn = document.getElementById('opening-hrs');\n  openingHrsBtn.addEventListener('click', () => {\n    emptyTab();\n    (0,_openingHrsTab__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n  });\n}\n\n(0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\ntabSwitcher();\n\n\n//# sourceURL=webpack://odin-restaurant/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/openingHrsTab.js":
+/*!******************************!*\
+  !*** ./src/openingHrsTab.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction openingHrsTab() {\n  const paragraph = document.createElement('p');\n  paragraph.textContent = `Monday - Thursday: 9am - 10pm \n  Friday: 9am - 11pm\n  Saturday: 10am - 11pm\n  Sunday: 10am - 9pm`;\n\n  const content = document.querySelector('#content');\n  content.appendChild(paragraph);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (openingHrsTab);\n\n\n//# sourceURL=webpack://odin-restaurant/./src/openingHrsTab.js?");
 
 /***/ }),
 

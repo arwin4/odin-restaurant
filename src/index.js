@@ -1,5 +1,6 @@
 import pageLoad from './pageLoad';
 import homeTab from './homeTab';
+import openingHrsTab from './openingHrsTab';
 import './style.css';
 
 function tabSwitcher() {
@@ -14,10 +15,10 @@ function tabSwitcher() {
     homeTab();
   });
 
-  const contactBtn = document.getElementById('contact');
-  contactBtn.addEventListener('click', () => {
+  const openingHrsBtn = document.getElementById('opening-hrs');
+  openingHrsBtn.addEventListener('click', () => {
     emptyTab();
-    // contactTab();
+    openingHrsTab();
   });
 }
 
