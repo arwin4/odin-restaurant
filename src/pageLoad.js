@@ -20,6 +20,7 @@ function pageLoad() {
   sure. The chef will cook food for the guests. And they will eat it. And you 
   will be one of those guests. Bon appetit!`;
 
+  // Add everything to the DOM
   const body = document.querySelector('body');
   body.appendChild(title);
   body.appendChild(foodImage);
