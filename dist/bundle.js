@@ -110,6 +110,16 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/homeTab.js":
+/*!************************!*\
+  !*** ./src/homeTab.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _food_overhead_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./food-overhead.jpg */ \"./src/food-overhead.jpg\");\n\n\nfunction homeTab() {\n  // Create main image\n  const foodImage = document.createElement('img');\n  foodImage.src = _food_overhead_jpg__WEBPACK_IMPORTED_MODULE_0__;\n  foodImage.alt = 'Plates of tasty food on a table, overhead';\n  foodImage.classList.add('main-image');\n\n  // Create paragraph\n  const paragraph = document.createElement('p');\n  paragraph.classList.add('description');\n  paragraph.textContent = `You will come to the restaurant and eat the food at \n  the restaurant. It will be delicious and you will enjoy it. This we will make\n  sure. The chef will cook food for the guests. And they will eat it. And you \n  will be one of those guests. Bon appetit!`;\n\n  // Add everything to a div\n  const div = document.createElement('div');\n  div.appendChild(foodImage);\n  div.appendChild(paragraph);\n\n  return div;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (homeTab);\n\n\n//# sourceURL=webpack://odin-restaurant/./src/homeTab.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -126,7 +136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pag
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _food_overhead_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./food-overhead.jpg */ \"./src/food-overhead.jpg\");\n\n\nfunction pageLoad() {\n  // Create title\n  const title = document.createElement('h1');\n  title.classList.add('title');\n  title.textContent = 'Eat the food';\n\n  // Create main image\n  const foodImage = document.createElement('img');\n  foodImage.src = _food_overhead_jpg__WEBPACK_IMPORTED_MODULE_0__;\n  foodImage.alt = 'Plates of tasty food on a table, overhead';\n  foodImage.classList.add('main-image');\n\n  // Create paragraph\n  const paragraph = document.createElement('p');\n  paragraph.classList.add('description');\n  paragraph.textContent = `You will come to the restaurant and eat the food at \n  the restaurant. It will be delicious and you will enjoy it. This we will make\n  sure. The chef will cook food for the guests. And they will eat it. And you \n  will be one of those guests. Bon appetit!`;\n\n  // Add everything to the DOM\n  const body = document.querySelector('body');\n  body.appendChild(title);\n  body.appendChild(foodImage);\n  body.appendChild(paragraph);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pageLoad);\n\n\n//# sourceURL=webpack://odin-restaurant/./src/pageLoad.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _homeTab__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homeTab */ \"./src/homeTab.js\");\n\n\nfunction pageLoad() {\n  // Create site title\n  const title = document.createElement('h1');\n  title.textContent = 'Eat the Food - 5***** Michelin star restaurant';\n\n  // Create nav buttons\n  const homeBtn = document.createElement('h2');\n  homeBtn.textContent = 'Home';\n\n  // Add static elements to page\n  const content = document.querySelector('#content');\n\n  content.appendChild(title);\n  content.appendChild(homeBtn);\n\n  const home = (0,_homeTab__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n  content.appendChild(home);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pageLoad);\n\n\n//# sourceURL=webpack://odin-restaurant/./src/pageLoad.js?");
 
 /***/ }),
 
