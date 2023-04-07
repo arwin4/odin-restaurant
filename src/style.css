@@ -1,3 +1,7 @@
 .main-image {
   width: 50%;
 }
+
+nav > *:hover {
+  cursor: pointer;
+}
